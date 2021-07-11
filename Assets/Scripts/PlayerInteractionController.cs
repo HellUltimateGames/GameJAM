@@ -26,7 +26,7 @@ public class PlayerInteractionController : MonoBehaviour
             {
                 if (hitInfo.collider.gameObject.tag == "Interactable")
                 {
-                    if (Input.GetButtonDown("Interact"))
+                    if (Input.GetButton("Interact"))
                     {
                         GameObject o = hitInfo.collider.gameObject;
                         o.GetComponent<IInteractable<GameObject>>().Interact(gameObject);

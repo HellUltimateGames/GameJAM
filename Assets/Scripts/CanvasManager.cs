@@ -30,7 +30,7 @@ public class CanvasManager : MonoBehaviour
     }
     void Update()
     {
-        if(Input.GetKeyDown("escape") || Input.GetKeyDown("e"))
+        if(Input.GetKeyDown("escape"))
         {
             closeInteractableUI();
             showingInteractableUI = false;
