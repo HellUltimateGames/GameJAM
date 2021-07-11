@@ -3,10 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class CameraZoom : MonoBehaviour
-{
-    
-    Camera playerCamera;
-    
+{ 
     
     public int camFOVZoom;
     public int camFOVNormal;
