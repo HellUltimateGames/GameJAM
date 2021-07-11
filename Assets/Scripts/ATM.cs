@@ -12,6 +12,6 @@ public class ATM : MonoBehaviour, IInteractable<GameObject>
         canvasManager = FindObjectOfType<Canvas>().GetComponent<CanvasManager>();
         UIPrefab = Resources.Load("Prefabs/InteractUI/ATMScreen") as GameObject;
         canvasManager.ShowInteractableUI(UIPrefab, true);
-        player.GetComponent<PlayerController>().canMove = false;
+        player.GetComponent<Controller>().canMove = false;
     }
  }

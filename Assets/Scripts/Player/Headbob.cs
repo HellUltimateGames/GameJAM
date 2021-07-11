@@ -6,7 +6,7 @@ public class Headbob : MonoBehaviour
 {
     public float walkingBobbingSpeed = 14f;
     public float bobbingAmount = 0.05f;
-    public PlayerController controller;
+    public Controller controller;
 
     float defaultPosY = 0;
     float timer = 0;

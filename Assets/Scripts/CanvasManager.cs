@@ -17,7 +17,7 @@ public class CanvasManager : MonoBehaviour
         InteractableUIObject.transform.SetParent(gameObject.transform, false);
         showingInteractableUI = true;
         if (player == null) return;
-        player.GetComponent<PlayerController>().canMove = false;
+        player.GetComponent<Controller>().canMove = false;
         Cursor.visible = true;
         Cursor.lockState = CursorLockMode.None;
         
@@ -34,7 +34,7 @@ public class CanvasManager : MonoBehaviour
         {
             closeInteractableUI();
             showingInteractableUI = false;
-            player.GetComponent<PlayerController>().canMove = true;
+            player.GetComponent<Controller>().canMove = true;
             Cursor.visible = false;
             Cursor.lockState = CursorLockMode.Locked;
 
