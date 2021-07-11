@@ -10,7 +10,8 @@ public class ATM : MonoBehaviour, IInteractable<GameObject>
     public void Interact(GameObject player)
     {
         canvasManager = FindObjectOfType<Canvas>().GetComponent<CanvasManager>();
-        UIPrefab = Resources.Load("Prefabs/ATMScreen") as GameObject;
-        canvasManager.ShowInteractableUI(UIPrefab);
+        UIPrefab = Resources.Load("Prefabs/InteractUI/ATMScreen") as GameObject;
+        canvasManager.ShowInteractableUI(UIPrefab, true);
+        player.GetComponent<PlayerController>().canMove = false;
     }
  }

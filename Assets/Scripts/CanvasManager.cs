@@ -8,12 +8,20 @@ public class CanvasManager : MonoBehaviour
 
     bool showingInteractableUI;
     GameObject InteractableUIObject;
-    public void ShowInteractableUI(GameObject prefab)
+    GameObject player;
+   
+    public void ShowInteractableUI(GameObject prefab, bool freeze)
     {
         if (showingInteractableUI) return;
         InteractableUIObject = Instantiate(prefab, new Vector3(0, 0, 0), Quaternion.identity);
-        InteractableUIObject.transform.parent = gameObject.transform;
+        InteractableUIObject.transform.SetParent(gameObject.transform, false);
         showingInteractableUI = true;
+        if (player == null) return;
+        player.GetComponent<PlayerController>().canMove = false;
+        Cursor.visible = true;
+        Cursor.lockState = CursorLockMode.None;
+        
+        
     }
     public void closeInteractableUI()
     {
@@ -25,6 +33,15 @@ public class CanvasManager : MonoBehaviour
         if(Input.GetKeyDown("escape") || Input.GetKeyDown("e"))
         {
             closeInteractableUI();
+            showingInteractableUI = false;
+            player.GetComponent<PlayerController>().canMove = true;
+            Cursor.visible = false;
+            Cursor.lockState = CursorLockMode.Locked;
+
         }    
+    }
+    void Start()
+    {
+        player = GameObject.FindGameObjectWithTag("Player");
     }
 }

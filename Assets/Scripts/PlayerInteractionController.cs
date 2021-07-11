@@ -21,6 +21,7 @@ public class PlayerInteractionController : MonoBehaviour
 
         if (Physics.Raycast(cam.transform.position, cam.transform.forward, out hitInfo, 7))
         {
+     
             if (hitInfo.collider != null)
             {
                 if (hitInfo.collider.gameObject.tag == "Interactable")
