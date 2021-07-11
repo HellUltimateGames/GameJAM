@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class InteractionController : MonoBehaviour
+public class PlayerInteractionController : MonoBehaviour
 {
 
     public Camera cam;
@@ -25,7 +25,11 @@ public class InteractionController : MonoBehaviour
             {
                 if (hitInfo.collider.gameObject.tag == "Interactable")
                 {
-                    //When the Raycast hits an interactable object
+                    if (Input.GetMouseButton(0))
+                    {
+                        GameObject o = hitInfo.collider.gameObject;
+                        o.GetComponent<IInteractable<GameObject>>().Interact(gameObject);
+                    }
                 }
                 else
                 {
