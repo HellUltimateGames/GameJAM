@@ -449,7 +449,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh43456
+  m_Name: pb_Mesh35464
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -969,6 +969,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!20 &2111842708 stripped
+Camera:
+  m_CorrespondingSourceObject: {fileID: 3123363643601604494, guid: b0193f879c52c7f42805aeeb65a72513, type: 3}
+  m_PrefabInstance: {fileID: 501288468}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2127220622
 GameObject:
   m_ObjectHideFlags: 0
@@ -1069,6 +1074,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1398053387, guid: d0b6fe76898f1434e9fe2f33630fc7a0, type: 3}
+      propertyPath: fpsCam
+      value: 
+      objectReference: {fileID: 2111842708}
     - target: {fileID: 516408684687173670, guid: d0b6fe76898f1434e9fe2f33630fc7a0, type: 3}
       propertyPath: m_RootOrder
       value: 1
