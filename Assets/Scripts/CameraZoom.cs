@@ -4,7 +4,10 @@ using UnityEngine;
 
 public class CameraZoom : MonoBehaviour
 {
-    public Camera playerCamera;
+    
+    Camera playerCamera;
+    
+    
     public int camFOVZoom;
     public int camFOVNormal;
     public int changeIncrement;
