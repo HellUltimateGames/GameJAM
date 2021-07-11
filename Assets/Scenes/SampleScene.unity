@@ -932,7 +932,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-30648
+  m_Name: pb_Mesh37300
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -1096,7 +1096,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-28080
+  m_Name: pb_Mesh37246
   serializedVersion: 10
   m_SubMeshes: []
   m_Shapes:
@@ -1351,6 +1351,8 @@ GameObject:
   - component: {fileID: 694765532}
   - component: {fileID: 694765534}
   - component: {fileID: 694765533}
+  - component: {fileID: 694765535}
+  - component: {fileID: 694765536}
   m_Layer: 0
   m_Name: PlayerCamera
   m_TagString: MainCamera
@@ -1423,6 +1425,37 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
+--- !u!114 &694765535
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 694765531}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00b921acfccf3a548a35e1a76cd93cc2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  walkingBobbingSpeed: 14
+  bobbingAmount: 0.05
+  controller: {fileID: 811438794}
+--- !u!114 &694765536
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 694765531}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ead7e3a5bdc243418eaca5264b72d3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerCamera: {fileID: 0}
+  camFOVZoom: 40
+  camFOVNormal: 60
+  changeIncrement: 1
 --- !u!1 &811438793
 GameObject:
   m_ObjectHideFlags: 0
@@ -1456,13 +1489,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32874f11a844d834caa063fa9b366521, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  walkingSpeed: 7.5
-  runningSpeed: 11.5
+  walkingSpeed: 4
+  runningSpeed: 7
   jumpSpeed: 8
   gravity: 20
   playerCamera: {fileID: 694765534}
   lookSpeed: 2
   lookXLimit: 45
+  moveDirection: {x: 0, y: 0, z: 0}
   canMove: 1
 --- !u!143 &811438795
 CharacterController:
@@ -1554,7 +1588,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 811438793}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 6.85, z: 0}
+  m_LocalPosition: {x: 0, y: 5.85, z: -7.62}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 694765532}
@@ -1579,7 +1613,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4446691097763302435, guid: 7797ae084dd97d04cb6bf549a43a3b40, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.7009432
+      value: 6.75
       objectReference: {fileID: 0}
     - target: {fileID: 4446691097763302435, guid: 7797ae084dd97d04cb6bf549a43a3b40, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1625,7 +1659,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-28666
+  m_Name: pb_Mesh37232
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
