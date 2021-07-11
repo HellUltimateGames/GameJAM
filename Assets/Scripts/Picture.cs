@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Picture : MonoBehaviour, IInteractable<GameObject>
 {
-    public void Interact()
+    public void Interact(GameObject player)
     {
 
     }
