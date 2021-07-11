@@ -15,7 +15,7 @@ public class PlayerController : MonoBehaviour
     public float lookXLimit = 45.0f;
 
     CharacterController characterController;
-    Vector3 moveDirection = Vector3.zero;
+    public Vector3 moveDirection = Vector3.zero;
     float rotationX = 0;
 
     [HideInInspector]
