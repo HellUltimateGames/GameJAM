@@ -62,8 +62,7 @@ public class GameController : MonoBehaviour {
 		else
 			Timer.text = "0:00";
 
-		if ( Input.GetKey( KeyCode.R ) )
-			Application.LoadLevel ( "barrel_Shooting_Game" );
+	
 	}
 
 	void CountBarrels()

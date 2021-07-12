@@ -44,4 +44,15 @@ public class CanvasManager : MonoBehaviour
     {
         player = GameObject.FindGameObjectWithTag("Player");
     }
+
+    public void SetCrosshair(int id)
+    {
+
+        for (int i = 0; i < transform.GetChild(0).childCount; i++)
+        {
+            GameObject Children = transform.GetChild(0).GetChild(i).gameObject;
+            Children.SetActive(id != i);
+        }
+        
+    }
 }

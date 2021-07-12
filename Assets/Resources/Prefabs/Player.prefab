@@ -131,7 +131,8 @@ GameObject:
   - component: {fileID: 3123363643984091803}
   - component: {fileID: 3123363643984091802}
   - component: {fileID: 3123363643984091776}
-  - component: {fileID: 6003925160655236800}
+  - component: {fileID: 405545103}
+  - component: {fileID: 1078018903515681688}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -269,12 +270,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bc71d346eba9eb24ca9577409268986a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 10
-  range: 100
-  fpsCam: {fileID: 3123363643601604494}
-  muzzleFlash: {fileID: 7804802459216751828, guid: 9562d30c8e1cc6e4c9f32eb30659a25f, type: 3}
-  impactEffect: {fileID: 5912082903213207947, guid: 9562d30c8e1cc6e4c9f32eb30659a25f, type: 3}
---- !u!114 &6003925160655236800
+--- !u!114 &405545103
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -287,9 +283,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cam: {fileID: 3123363643601604494}
-  interactiveIcons:
-  - {fileID: 0}
-  - {fileID: 0}
+--- !u!114 &1078018903515681688
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3123363643984091801}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 059d08409f4a34a4b9e58bd386de179b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MaxItems: 1
 --- !u!1 &6261125911712697942
 GameObject:
   m_ObjectHideFlags: 0
@@ -316,13 +322,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6261125911712697942}
-  m_LocalRotation: {x: -0.06854129, y: -0.122052714, z: 0.008449144, w: 0.9901181}
-  m_LocalPosition: {x: 0.26, y: -0.39200014, z: 0.5539999}
+  m_LocalRotation: {x: -0.06867537, y: -0.10515448, z: 0.007279357, w: 0.99205506}
+  m_LocalPosition: {x: 0.442, y: -0.41, z: 0.428}
   m_LocalScale: {x: 0.18022, y: 0.1747171, z: 0.615209}
   m_Children: []
   m_Father: {fileID: 3123363643601604492}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: -7.681, y: -14.185, z: 1.935}
+  m_LocalEulerAnglesHint: {x: -7.743, y: -12.214, z: 1.671}
 --- !u!33 &1424766108583044778
 MeshFilter:
   m_ObjectHideFlags: 0

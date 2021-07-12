@@ -40,7 +40,7 @@ public class PlayerInteractionController : MonoBehaviour
                         
 
                         GameObject o = hitInfo.collider.gameObject;
-                        o.GetComponent<IInteractable<GameObject>>().Interact(gameObject);
+                        o.GetComponent<IInteractable>().Interact(gameObject);
                     }
                 }
                 else

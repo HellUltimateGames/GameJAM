@@ -438,18 +438,13 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &152413938 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8663582041344278997, guid: 4e9d3b7f11e6d5b4a8bc073fc50dad4e, type: 3}
-  m_PrefabInstance: {fileID: 8865496500114161254}
-  m_PrefabAsset: {fileID: 0}
 --- !u!43 &435692450
 Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh35464
+  m_Name: pb_Mesh57232
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -607,11 +602,6 @@ Mesh:
     offset: 0
     size: 0
     path: 
---- !u!1 &482882151 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8663582043047171661, guid: 4e9d3b7f11e6d5b4a8bc073fc50dad4e, type: 3}
-  m_PrefabInstance: {fileID: 8865496500114161254}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &501288468
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -667,47 +657,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6003925160655236800, guid: b0193f879c52c7f42805aeeb65a72513, type: 3}
-      propertyPath: interactiveIcons.Array.data[0]
-      value: 
-      objectReference: {fileID: 152413938}
-    - target: {fileID: 6003925160655236800, guid: b0193f879c52c7f42805aeeb65a72513, type: 3}
-      propertyPath: interactiveIcons.Array.data[1]
-      value: 
-      objectReference: {fileID: 482882151}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b0193f879c52c7f42805aeeb65a72513, type: 3}
---- !u!1 &515711990 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 181790, guid: 13095cc17faefbc45a7314e7d1b38f24, type: 3}
-  m_PrefabInstance: {fileID: 1120451544}
-  m_PrefabAsset: {fileID: 0}
---- !u!64 &515711994
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 515711990}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300000, guid: 49ec5253bea63c4428fc0d2a13fc7d0b, type: 3}
---- !u!114 &515711995
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 515711990}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3fd5a927eda3c5f4d9de479f4f7bead5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &811191755
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -791,10 +742,6 @@ PrefabInstance:
     - target: {fileID: 181790, guid: 13095cc17faefbc45a7314e7d1b38f24, type: 3}
       propertyPath: m_Name
       value: SI_Prop_ATM_01
-      objectReference: {fileID: 0}
-    - target: {fileID: 181790, guid: 13095cc17faefbc45a7314e7d1b38f24, type: 3}
-      propertyPath: m_TagString
-      value: Interactable
       objectReference: {fileID: 0}
     - target: {fileID: 438344, guid: 13095cc17faefbc45a7314e7d1b38f24, type: 3}
       propertyPath: m_RootOrder
@@ -1125,10 +1072,6 @@ PrefabInstance:
     - target: {fileID: 892124334058173084, guid: d0b6fe76898f1434e9fe2f33630fc7a0, type: 3}
       propertyPath: m_Name
       value: Assault Rifle 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 892124334058173084, guid: d0b6fe76898f1434e9fe2f33630fc7a0, type: 3}
-      propertyPath: m_TagString
-      value: Interactable
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d0b6fe76898f1434e9fe2f33630fc7a0, type: 3}
