@@ -25,7 +25,6 @@ public class Weapon : MonoBehaviour, IInteractable, IWeapon, IPickable
     // Start is called before the first frame update
     void Start()
     {
-        muzzleFlash = Instantiate(GetComponentInChildren<ParticleSystem>());
     }
 
     // Update is called once per frame
@@ -58,6 +57,7 @@ public class Weapon : MonoBehaviour, IInteractable, IWeapon, IPickable
 
     public void Shoot()
     {
+        muzzleFlash = transform.GetComponentInChildren<ParticleSystem>();
         muzzleFlash.Play();
 
         RaycastHit hit;

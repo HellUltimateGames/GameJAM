@@ -8,12 +8,14 @@ public class Actions : MonoBehaviour
     {
         if(Input.GetButtonDown("Fire1"))
         {
-            
-            GameObject EquipedObject = GetComponent<Inventory>().Contents[GetComponent<Inventory>().EquippedIndex].gameObject;
-
-            if (EquipedObject.GetComponent<Weapon>() != null)
+            if (GetComponent<Inventory>().EquippedIndex != -1 && GetComponent<Inventory>().EquippedIndex < GetComponent<Inventory>().MaxItems)
             {
-                EquipedObject.GetComponent<Weapon>().Shoot();
+                GameObject EquipedObject = GetComponent<Inventory>().Contents[GetComponent<Inventory>().EquippedIndex].gameObject;
+
+                if (EquipedObject.GetComponent<Weapon>() != null)
+                {
+                    EquipedObject.GetComponent<Weapon>().Shoot();
+                }
             }
         }
     }
