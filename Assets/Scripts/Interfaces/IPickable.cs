@@ -8,6 +8,7 @@ public interface IPickable
     public bool isPickedUp { get; set; }
     public bool isEquiped { get; set; }
     public int InventoryId { get; set; }
+
     public void PickUp(GameObject player);
 
     public void Equip(GameObject player);
