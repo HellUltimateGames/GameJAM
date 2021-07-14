@@ -46,7 +46,7 @@ public class Weapon : MonoBehaviour, IInteractable, IWeapon, IPickable
 
     public void Interact(GameObject player)
     {
-        player.GetComponent<Inventory>().TryAdd(this, player, out _);
+       player.GetComponent<Inventory>().TryAdd(this, player, out _);
     }
 
     public void PickUp(GameObject player)

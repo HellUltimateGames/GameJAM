@@ -15,7 +15,6 @@ public class Inventory : MonoBehaviour
         
         if (Contents.Count < MaxItems)
         {
-            
             Contents.Add(gameObject);
             EquippedIndex = Contents.IndexOf(gameObject);
             gameObject.PickUp(player);
@@ -33,7 +32,7 @@ public class Inventory : MonoBehaviour
                 Contents.RemoveAt(EquippedIndex + 1);
                 gameObject.PickUp(player);
                 gameObject.Equip(player);
-                error = "";
+                error = "max_items_current_replaced";
 
                 return true;
             }
