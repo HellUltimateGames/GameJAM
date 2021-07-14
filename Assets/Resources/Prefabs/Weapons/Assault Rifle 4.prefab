@@ -44,7 +44,8 @@ MonoBehaviour:
   damage: 10
   range: 100
   fpsCam: {fileID: 0}
-  impactEffect: {fileID: 0}
+  impactEffect: {fileID: 100000, guid: cae283c880c5e9a4593b474dfbcb3154, type: 3}
+  fireRate: 0.2
 --- !u!1001 &45070678386921421
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -175,5 +176,7 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 11400002, guid: 8441d9a1ca714a046aacaa0136bf0d8c, type: 3}
+    - {fileID: 11400000, guid: 8441d9a1ca714a046aacaa0136bf0d8c, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 8441d9a1ca714a046aacaa0136bf0d8c, type: 3}

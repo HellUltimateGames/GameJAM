@@ -6,7 +6,7 @@ public class Actions : MonoBehaviour
     
     void Update()
     {
-        if(Input.GetButtonDown("Fire1"))
+        if(Input.GetButton("Fire1"))
         {
             if (GetComponent<Inventory>().EquippedIndex != -1 && GetComponent<Inventory>().EquippedIndex < GetComponent<Inventory>().MaxItems)
             {

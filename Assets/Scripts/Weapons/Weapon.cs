@@ -20,6 +20,9 @@ public class Weapon : MonoBehaviour, IInteractable, IWeapon, IPickable
     int _inventoryId = -1;
     public int InventoryId { get { return _inventoryId; } set { _inventoryId = value; } }
 
+    bool shooting = false;
+    public float fireRate = 0.2f;
+    float fireTime = 0;
 
 
     // Start is called before the first frame update
@@ -33,6 +36,11 @@ public class Weapon : MonoBehaviour, IInteractable, IWeapon, IPickable
         if (!isPickedUp)
         {
             GetComponent<FloatController>().Float();
+        }
+
+        if (shooting)
+        {
+            Shoot();
         }
     }
 
@@ -57,20 +65,42 @@ public class Weapon : MonoBehaviour, IInteractable, IWeapon, IPickable
 
     public void Shoot()
     {
-        muzzleFlash = transform.GetComponentInChildren<ParticleSystem>();
-        muzzleFlash.Play();
-
-        RaycastHit hit;
-        if (Physics.Raycast(fpsCam.transform.position, fpsCam.transform.forward, out hit, range))
+        if (Time.time > fireTime)
         {
-            Target target = hit.transform.GetComponent<Target>();
-            if (target != null)
-            {
-                target.TakeDamage(damage);
-            }
+            fireTime += fireRate;
+            muzzleFlash = transform.GetComponentInChildren<ParticleSystem>();
+            muzzleFlash.Play();
+            GetComponent<AudioSource>().Play();
 
-            GameObject impactGO = Instantiate(impactEffect, hit.point, Quaternion.LookRotation(hit.normal));
-            Destroy(impactGO, 1f);
+            RaycastHit hit;
+            if (Physics.Raycast(fpsCam.transform.position, fpsCam.transform.forward, out hit, range))
+            {
+                Target target = hit.transform.GetComponent<Target>();
+                if (target != null)
+                {
+                    target.TakeDamage(damage);
+                }
+
+                GameObject impactGO = Instantiate(impactEffect, hit.point, Quaternion.LookRotation(hit.normal));
+                Destroy(impactGO, 2f);
+            }
         }
+        
+
+                
+    }
+
+
+       
+    
+
+    public void startShooting()
+    {
+        shooting = true;
+    }
+
+    public void stopShooting()
+    {
+        shooting = false;
     }
 }
