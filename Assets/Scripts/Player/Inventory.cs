@@ -30,6 +30,7 @@ public class Inventory : MonoBehaviour
             {
                 Contents.Insert(EquippedIndex, gameObject);
                 EquippedIndex = Contents.IndexOf(gameObject);
+                Contents.RemoveAt(EquippedIndex + 1);
                 gameObject.PickUp(player);
                 gameObject.Equip(player);
                 error = "";
