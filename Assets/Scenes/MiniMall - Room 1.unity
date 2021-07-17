@@ -433,6 +433,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Plywood (15)
       objectReference: {fileID: 0}
+    - target: {fileID: 5513304486032405686, guid: 804a941d4ee7e87429016db32680a58e, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8850813085240571663, guid: 804a941d4ee7e87429016db32680a58e, type: 3}
       propertyPath: m_RootOrder
       value: 22
@@ -6555,6 +6559,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Plywood (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 5513304486032405686, guid: 804a941d4ee7e87429016db32680a58e, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8850813085240571663, guid: 804a941d4ee7e87429016db32680a58e, type: 3}
       propertyPath: m_RootOrder
       value: 13
@@ -8507,6 +8515,8 @@ Transform:
   - {fileID: 1396421321}
   - {fileID: 986939402}
   - {fileID: 253343498}
+  - {fileID: 1872917898}
+  - {fileID: 527680784}
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -11600,6 +11610,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Plywood (14)
       objectReference: {fileID: 0}
+    - target: {fileID: 5513304486032405686, guid: 804a941d4ee7e87429016db32680a58e, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8850813085240571663, guid: 804a941d4ee7e87429016db32680a58e, type: 3}
       propertyPath: m_RootOrder
       value: 20
@@ -11660,6 +11674,10 @@ PrefabInstance:
     - target: {fileID: 5513304486032405686, guid: 804a941d4ee7e87429016db32680a58e, type: 3}
       propertyPath: m_Name
       value: Plywood (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5513304486032405686, guid: 804a941d4ee7e87429016db32680a58e, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8850813085240571663, guid: 804a941d4ee7e87429016db32680a58e, type: 3}
       propertyPath: m_RootOrder
@@ -13780,6 +13798,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Plywood (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 5513304486032405686, guid: 804a941d4ee7e87429016db32680a58e, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8850813085240571663, guid: 804a941d4ee7e87429016db32680a58e, type: 3}
       propertyPath: m_RootOrder
       value: 14
@@ -13836,6 +13858,10 @@ PrefabInstance:
     - target: {fileID: 5513304486032405686, guid: 804a941d4ee7e87429016db32680a58e, type: 3}
       propertyPath: m_Name
       value: Plywood (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5513304486032405686, guid: 804a941d4ee7e87429016db32680a58e, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8850813085240571663, guid: 804a941d4ee7e87429016db32680a58e, type: 3}
       propertyPath: m_RootOrder
@@ -13975,6 +14001,56 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: 98602ae58a69f674b8efc7a03a466a89, type: 3}
+--- !u!33 &524717066
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 527746348}
+  m_Mesh: {fileID: 4300000, guid: d7a4558c2b36fc54dabfb4d24eb5d37e, type: 3}
+--- !u!23 &525735056
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 527746348}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: b243f1f84ea457945900d7c80e573112, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!1 &526108980 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 118942, guid: 4c66aa239a3aea24aad7866d03c0528f, type: 3}
@@ -13994,6 +14070,39 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: 5b3c190569a23c94fbd763ccbffb6aac, type: 3}
+--- !u!4 &527680784
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 527746348}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -30.102, y: -2.299, z: -6.752001}
+  m_LocalScale: {x: -1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 978922580}
+  m_Father: {fileID: 342954551}
+  m_RootOrder: 627
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &527746348
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 527680784}
+  - component: {fileID: 524717066}
+  - component: {fileID: 525735056}
+  m_Layer: 0
+  m_Name: Exit
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &531435378 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 160820, guid: e1bcf5116a513bb418c1fe62258737c2, type: 3}
@@ -17250,6 +17359,10 @@ PrefabInstance:
     - target: {fileID: 5513304486032405686, guid: 804a941d4ee7e87429016db32680a58e, type: 3}
       propertyPath: m_Name
       value: Plywood (22)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5513304486032405686, guid: 804a941d4ee7e87429016db32680a58e, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8850813085240571663, guid: 804a941d4ee7e87429016db32680a58e, type: 3}
       propertyPath: m_RootOrder
@@ -21433,6 +21546,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Plywood (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 5513304486032405686, guid: 804a941d4ee7e87429016db32680a58e, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8850813085240571663, guid: 804a941d4ee7e87429016db32680a58e, type: 3}
       propertyPath: m_RootOrder
       value: 15
@@ -22417,6 +22534,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Plywood (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 5513304486032405686, guid: 804a941d4ee7e87429016db32680a58e, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8850813085240571663, guid: 804a941d4ee7e87429016db32680a58e, type: 3}
       propertyPath: m_RootOrder
       value: 18
@@ -23203,6 +23324,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Plywood (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 5513304486032405686, guid: 804a941d4ee7e87429016db32680a58e, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8850813085240571663, guid: 804a941d4ee7e87429016db32680a58e, type: 3}
       propertyPath: m_RootOrder
       value: 9
@@ -23306,6 +23431,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Plywood (21)
       objectReference: {fileID: 0}
+    - target: {fileID: 5513304486032405686, guid: 804a941d4ee7e87429016db32680a58e, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8850813085240571663, guid: 804a941d4ee7e87429016db32680a58e, type: 3}
       propertyPath: m_RootOrder
       value: 27
@@ -23370,6 +23499,10 @@ PrefabInstance:
     - target: {fileID: 5513304486032405686, guid: 804a941d4ee7e87429016db32680a58e, type: 3}
       propertyPath: m_Name
       value: Plywood (24)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5513304486032405686, guid: 804a941d4ee7e87429016db32680a58e, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8850813085240571663, guid: 804a941d4ee7e87429016db32680a58e, type: 3}
       propertyPath: m_RootOrder
@@ -24033,6 +24166,10 @@ PrefabInstance:
     - target: {fileID: 5513304486032405686, guid: 804a941d4ee7e87429016db32680a58e, type: 3}
       propertyPath: m_Name
       value: Plywood (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5513304486032405686, guid: 804a941d4ee7e87429016db32680a58e, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8850813085240571663, guid: 804a941d4ee7e87429016db32680a58e, type: 3}
       propertyPath: m_RootOrder
@@ -24750,6 +24887,102 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 463858, guid: 435bbf94f0c16b842a13d18d0c5074b5, type: 3}
   m_PrefabInstance: {fileID: 978667774}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &978922579
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 978922580}
+  - component: {fileID: 978922583}
+  - component: {fileID: 978922582}
+  - component: {fileID: 978922581}
+  m_Layer: 0
+  m_Name: DoorJoint (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &978922580
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 978922579}
+  m_LocalRotation: {x: -0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 4.3, y: 0, z: -0.35}
+  m_LocalScale: {x: -1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 527680784}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &978922581
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 978922579}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &978922582
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 978922579}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &978922583
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 978922579}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &982722579 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 155308, guid: f49f7d6466ef0244492e486afa2e3213, type: 3}
@@ -27201,6 +27434,10 @@ PrefabInstance:
     - target: {fileID: 5513304486032405686, guid: 804a941d4ee7e87429016db32680a58e, type: 3}
       propertyPath: m_Name
       value: Plywood (19)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5513304486032405686, guid: 804a941d4ee7e87429016db32680a58e, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8850813085240571663, guid: 804a941d4ee7e87429016db32680a58e, type: 3}
       propertyPath: m_RootOrder
@@ -30945,6 +31182,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Plywood (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 5513304486032405686, guid: 804a941d4ee7e87429016db32680a58e, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8850813085240571663, guid: 804a941d4ee7e87429016db32680a58e, type: 3}
       propertyPath: m_RootOrder
       value: 11
@@ -32238,11 +32479,6 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: 26a3784c283f8e343b74f190220ce3d5, type: 3}
---- !u!1 &1280492684 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8663582041344278997, guid: 4e9d3b7f11e6d5b4a8bc073fc50dad4e, type: 3}
-  m_PrefabInstance: {fileID: 1420158430}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1281911367 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 163986, guid: 9d8bd1e956e9e994e93ffbf60eaa3a97, type: 3}
@@ -39072,6 +39308,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Plywood (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 5513304486032405686, guid: 804a941d4ee7e87429016db32680a58e, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8850813085240571663, guid: 804a941d4ee7e87429016db32680a58e, type: 3}
       propertyPath: m_RootOrder
       value: 19
@@ -39499,6 +39739,10 @@ PrefabInstance:
     - target: {fileID: 5513304486032405686, guid: 804a941d4ee7e87429016db32680a58e, type: 3}
       propertyPath: m_Name
       value: Plywood (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5513304486032405686, guid: 804a941d4ee7e87429016db32680a58e, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8850813085240571663, guid: 804a941d4ee7e87429016db32680a58e, type: 3}
       propertyPath: m_RootOrder
@@ -41211,6 +41455,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Plywood (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 5513304486032405686, guid: 804a941d4ee7e87429016db32680a58e, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8850813085240571663, guid: 804a941d4ee7e87429016db32680a58e, type: 3}
       propertyPath: m_RootOrder
       value: 10
@@ -42548,6 +42796,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Plywood (23)
       objectReference: {fileID: 0}
+    - target: {fileID: 5513304486032405686, guid: 804a941d4ee7e87429016db32680a58e, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8850813085240571663, guid: 804a941d4ee7e87429016db32680a58e, type: 3}
       propertyPath: m_RootOrder
       value: 29
@@ -42861,6 +43113,10 @@ PrefabInstance:
     - target: {fileID: 5513304486032405686, guid: 804a941d4ee7e87429016db32680a58e, type: 3}
       propertyPath: m_Name
       value: Plywood (17)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5513304486032405686, guid: 804a941d4ee7e87429016db32680a58e, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8850813085240571663, guid: 804a941d4ee7e87429016db32680a58e, type: 3}
       propertyPath: m_RootOrder
@@ -44148,22 +44404,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6003925160655236800, guid: b0193f879c52c7f42805aeeb65a72513, type: 3}
-      propertyPath: interactiveIcons.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 6003925160655236800, guid: b0193f879c52c7f42805aeeb65a72513, type: 3}
-      propertyPath: interactiveIcons.Array.data[0]
-      value: 
-      objectReference: {fileID: 1280492684}
-    - target: {fileID: 6003925160655236800, guid: b0193f879c52c7f42805aeeb65a72513, type: 3}
-      propertyPath: interactiveIcons.Array.data[1]
-      value: 
-      objectReference: {fileID: 1772772063}
-    - target: {fileID: 8663582042037764046, guid: b0193f879c52c7f42805aeeb65a72513, type: 3}
-      propertyPath: m_Name
-      value: Interaction/Crosshair
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b0193f879c52c7f42805aeeb65a72513, type: 3}
 --- !u!1 &1750213977 stripped
@@ -44418,6 +44658,10 @@ PrefabInstance:
     - target: {fileID: 5513304486032405686, guid: 804a941d4ee7e87429016db32680a58e, type: 3}
       propertyPath: m_Name
       value: Plywood (18)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5513304486032405686, guid: 804a941d4ee7e87429016db32680a58e, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8850813085240571663, guid: 804a941d4ee7e87429016db32680a58e, type: 3}
       propertyPath: m_RootOrder
@@ -44750,11 +44994,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 443854, guid: 9d8bd1e956e9e994e93ffbf60eaa3a97, type: 3}
   m_PrefabInstance: {fileID: 1772183625}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1772772063 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8663582043047171661, guid: 4e9d3b7f11e6d5b4a8bc073fc50dad4e, type: 3}
-  m_PrefabInstance: {fileID: 1420158430}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1773028692
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -45084,6 +45323,10 @@ PrefabInstance:
     - target: {fileID: 5513304486032405686, guid: 804a941d4ee7e87429016db32680a58e, type: 3}
       propertyPath: m_Name
       value: Plywood (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5513304486032405686, guid: 804a941d4ee7e87429016db32680a58e, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8850813085240571663, guid: 804a941d4ee7e87429016db32680a58e, type: 3}
       propertyPath: m_RootOrder
@@ -47723,6 +47966,48 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 427398, guid: 0fb752c42d0dd6d4aa4e14ad918e2e92, type: 3}
   m_PrefabInstance: {fileID: 1870236818}
   m_PrefabAsset: {fileID: 0}
+--- !u!23 &1871160330
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1873114550}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: b243f1f84ea457945900d7c80e573112, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!1 &1871777756 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 155308, guid: f49f7d6466ef0244492e486afa2e3213, type: 3}
@@ -47742,6 +48027,61 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: 8057645a8362dbd42a18a78c55702b86, type: 3}
+--- !u!33 &1872182416
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1873114550}
+  m_Mesh: {fileID: 4300000, guid: d7a4558c2b36fc54dabfb4d24eb5d37e, type: 3}
+--- !u!4 &1872917898
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1873114550}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -26.102, y: -2.299, z: -6.752}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 342954551}
+  m_RootOrder: 626
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1873114550
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1872917898}
+  - component: {fileID: 1872182416}
+  - component: {fileID: 1871160330}
+  - component: {fileID: 1873114551}
+  m_Layer: 0
+  m_Name: Exit Door
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!64 &1873114551
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1873114550}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: d7a4558c2b36fc54dabfb4d24eb5d37e, type: 3}
 --- !u!1 &1874380243
 GameObject:
   m_ObjectHideFlags: 0
@@ -52523,6 +52863,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Plywood (20)
       objectReference: {fileID: 0}
+    - target: {fileID: 5513304486032405686, guid: 804a941d4ee7e87429016db32680a58e, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8850813085240571663, guid: 804a941d4ee7e87429016db32680a58e, type: 3}
       propertyPath: m_RootOrder
       value: 26
@@ -54617,6 +54961,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Plywood (16)
       objectReference: {fileID: 0}
+    - target: {fileID: 5513304486032405686, guid: 804a941d4ee7e87429016db32680a58e, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8850813085240571663, guid: 804a941d4ee7e87429016db32680a58e, type: 3}
       propertyPath: m_RootOrder
       value: 21
@@ -55205,6 +55553,10 @@ PrefabInstance:
     - target: {fileID: 5513304486032405686, guid: 804a941d4ee7e87429016db32680a58e, type: 3}
       propertyPath: m_Name
       value: Plywood
+      objectReference: {fileID: 0}
+    - target: {fileID: 5513304486032405686, guid: 804a941d4ee7e87429016db32680a58e, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8850813085240571663, guid: 804a941d4ee7e87429016db32680a58e, type: 3}
       propertyPath: m_RootOrder
