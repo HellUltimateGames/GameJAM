@@ -2,16 +2,17 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ATM : MonoBehaviour, IInteractable
+public class WrittenNote : MonoBehaviour, IInteractable
 {
     // Start is called before the first frame update
     CanvasManager canvasManager;
     GameObject UIPrefab;
+    public int index;
     public void Interact(GameObject player)
     {
         canvasManager = FindObjectOfType<Canvas>().GetComponent<CanvasManager>();
-        UIPrefab = Resources.Load("Prefabs/InteractUI/ATMScreen") as GameObject;
-        canvasManager.ShowInteractableUI(UIPrefab, true);
-       // player.GetComponent<Controller>().canMove = false;
+        UIPrefab = Resources.Load("Prefabs/InteractUI/NoteScreen" + index) as GameObject;
+        canvasManager.ShowInteractableUI(UIPrefab, false);
+        //player.GetComponent<Controller>().canMove = false;
     }
- }
+}
