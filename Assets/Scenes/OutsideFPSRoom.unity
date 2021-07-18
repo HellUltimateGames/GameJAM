@@ -851,7 +851,7 @@ MonoBehaviour:
     - name: Grass
       layerID: 0
       threshold: 0
-    instanceCount: 196
+    instanceCount: 187
     prefabs:
     - index: 0
       probability: 100
@@ -872,7 +872,7 @@ MonoBehaviour:
     - name: Grass
       layerID: 0
       threshold: 0
-    instanceCount: 30
+    instanceCount: 29
     prefabs:
     - index: 1
       probability: 100
@@ -893,30 +893,12 @@ MonoBehaviour:
     - name: Grass
       layerID: 0
       threshold: 0
-    instanceCount: 42
+    instanceCount: 38
     prefabs:
     - index: 2
       probability: 100
       prefab: {fileID: 188972, guid: 7641c7e8354e2c44cab6432d9d2c6d1b, type: 3}
     distance: 6
-    scaleRange: {x: 0.8, y: 1.2}
-    sinkAmount: 0
-  - enabled: 1
-    name: Tree Type1 01
-    seed: 28103
-    probability: 10
-    collisionCheck: 1
-    rejectUnderwater: 1
-    heightRange: {x: 0, y: 1000}
-    slopeRange: {x: 0, y: 60}
-    curvatureRange: {x: 0, y: 1}
-    layerMasks: []
-    instanceCount: 30
-    prefabs:
-    - index: 3
-      probability: 100
-      prefab: {fileID: 149218, guid: fc05c8bfad7df5a4abe568aca7403b9e, type: 3}
-    distance: 5
     scaleRange: {x: 0.8, y: 1.2}
     sinkAmount: 0
   grassPrefabs:
@@ -933,7 +915,7 @@ MonoBehaviour:
     - name: Grass
       layerID: 0
       threshold: 0
-    instanceCount: 635450
+    instanceCount: 603746
     index: 0
     type: 1
     renderAsBillboard: 0
