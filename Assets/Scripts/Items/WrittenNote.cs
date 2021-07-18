@@ -13,6 +13,8 @@ public class WrittenNote : MonoBehaviour, IInteractable
         canvasManager = FindObjectOfType<Canvas>().GetComponent<CanvasManager>();
         UIPrefab = Resources.Load("Prefabs/InteractUI/NoteScreen" + index) as GameObject;
         canvasManager.ShowInteractableUI(UIPrefab, false);
+        canvasManager.numberOfNotesRead++;
+        Destroy(gameObject);
         //player.GetComponent<Controller>().canMove = false;
     }
 }

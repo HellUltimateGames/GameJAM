@@ -21,7 +21,8 @@ public class ArmyButtonController : MonoBehaviour
     }
     public void Update()
     {
-        if (!sawAllNotes) Join.enabled = false;
-        else { Join.enabled = true; }
+        sawAllNotes = (gameObject.GetComponentInParent<CanvasManager>().numberOfNotesRead >= 7); 
+        if (!sawAllNotes) Join.interactable = false;
+        else { Join.interactable = true; }
     }
 }

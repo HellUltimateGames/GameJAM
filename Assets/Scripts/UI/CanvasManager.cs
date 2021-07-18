@@ -9,7 +9,8 @@ public class CanvasManager : MonoBehaviour
     bool showingInteractableUI;
     GameObject InteractableUIObject;
     GameObject player;
-   
+
+    public int numberOfNotesRead;
     public void ShowInteractableUI(GameObject prefab, bool freeze)
     {
         if (showingInteractableUI) return;

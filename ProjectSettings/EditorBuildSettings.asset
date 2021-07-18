@@ -11,4 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/MiniMall - Room 1.unity
     guid: ec4f69a30af0905489e1c99e01e55bae
+  - enabled: 1
+    path: Assets/Scenes/OutsideFPSRoom.unity
+    guid: b7932ae8919d3674fb916b747c7d97c5
   m_configObjects: {}

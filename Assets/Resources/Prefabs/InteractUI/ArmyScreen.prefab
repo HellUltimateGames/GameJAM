@@ -768,7 +768,7 @@ MonoBehaviour:
     m_HighlightedColor: {r: 0.009077947, g: 0.6415094, b: 0.039861284, a: 1}
     m_PressedColor: {r: 0, g: 0.4245283, b: 0.020964349, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_DisabledColor: {r: 0.20754719, g: 0.20754719, b: 0.20754719, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
   m_SpriteState:
@@ -786,7 +786,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 4787236333722555555}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 7522160738721026963}
+        m_TargetAssemblyTypeName: ArmyButtonController, Assembly-CSharp
+        m_MethodName: goToVN
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &8258523288832116576
 GameObject:
   m_ObjectHideFlags: 0
