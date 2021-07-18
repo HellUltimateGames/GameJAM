@@ -14,6 +14,8 @@ public class Controller : MonoBehaviour
     public float lookSpeed = 2.0f;
     public float lookXLimit = 45.0f;
 
+    private CanvasManager canvas;
+
     CharacterController characterController;
     public Vector3 moveDirection = Vector3.zero;
     float rotationX = 0;
@@ -28,8 +30,9 @@ public class Controller : MonoBehaviour
         // Lock cursor
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
+        canvas = GameObject.Find("Canvas").GetComponent<CanvasManager>();
 
-        
+
     }
 
     void Update()
@@ -72,5 +75,9 @@ public class Controller : MonoBehaviour
             playerCamera.transform.localRotation = Quaternion.Euler(rotationX, 0, 0);
             transform.rotation *= Quaternion.Euler(0, Input.GetAxis("Mouse X") * lookSpeed, 0);
         }
+    }
+    public void TakeDamage(int i)
+    {
+        canvas.DamagePlayer(i);
     }
 }

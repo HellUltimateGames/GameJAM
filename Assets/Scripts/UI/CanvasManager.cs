@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.UI;
 public class CanvasManager : MonoBehaviour
 {
     // Start is called before the first frame update
@@ -54,5 +54,10 @@ public class CanvasManager : MonoBehaviour
             Children.SetActive(id != i);
         }
         
+    }
+    public void DamagePlayer(int val)
+    {
+       Slider slider =  gameObject.GetComponentInChildren<Slider>();
+        slider.value = (slider.value - val);
     }
 }
