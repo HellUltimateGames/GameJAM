@@ -5,11 +5,6 @@ using UnityEngine.AI;
 
 public class EnemyAI : MonoBehaviour
 {
-  
-
-
-
-    
 
     public NavMeshAgent agent;
 
@@ -50,8 +45,11 @@ public class EnemyAI : MonoBehaviour
         playerInAttackRange = Physics.CheckSphere(transform.position, attackRange, whatIsPlayer);
 
         if(!playerSightInRange && !playerInAttackRange) Patrolling();
-        if (playerSightInRange && !playerInAttackRange) ChasePlayer();
-        if (playerSightInRange && playerInAttackRange) AttackPlayer();
+        if (playerSightInRange && playerInAttackRange) {
+            AttackPlayer();
+        }
+        else if (playerSightInRange && !playerInAttackRange) {
+            ChasePlayer(); }
 
         
     }
@@ -88,6 +86,7 @@ public class EnemyAI : MonoBehaviour
         anim.SetInteger("Mode", 1);
         agent.SetDestination(player.position);
     }
+
     private void AttackPlayer()
     {
 
@@ -123,6 +122,7 @@ public class EnemyAI : MonoBehaviour
 
         if (health <= 0) Invoke(nameof(KillEnemy), .2f);
     }
+
     public void KillEnemy()
     {
         isDead = true;
