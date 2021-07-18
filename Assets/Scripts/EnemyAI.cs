@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
-
+using UnityEngine.SceneManagement;
 public class EnemyAI : MonoBehaviour
 {
 
@@ -33,6 +33,7 @@ public class EnemyAI : MonoBehaviour
     public float sightRange, attackRange;
     public bool playerSightInRange, playerInAttackRange;
 
+    
     private void Awake()
     {
         player = GameObject.FindGameObjectWithTag("Player").transform;
@@ -100,6 +101,7 @@ public class EnemyAI : MonoBehaviour
             ///Attack Code
             Rigidbody rb = Instantiate(projectile, transform.position + (transform.forward*2), Quaternion.identity).GetComponent<Rigidbody>();
             rb.gameObject.GetComponent<CapsuleCollider>().enabled = true;
+           
             rb.AddForce(transform.forward * projectileSpeed, ForceMode.Impulse);
             
             
@@ -126,6 +128,11 @@ public class EnemyAI : MonoBehaviour
     public void KillEnemy()
     {
         isDead = true;
-        gameObject.SetActive(false);
+        if (GameObject.FindGameObjectsWithTag("Enemy").Length <= 1)
+        {
+            SceneManager.LoadScene(1);
+        }
+        Destroy(gameObject);
+        
     }
 }

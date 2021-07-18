@@ -63,7 +63,7 @@ MonoBehaviour:
   anim: {fileID: 6330057238614261687}
   timeBetweenAttacks: 0.8
   projectile: {fileID: 1471175931969721028}
-  projectileSpeed: 2
+  projectileSpeed: 4
   sightRange: 100
   attackRange: 8
   playerSightInRange: 0

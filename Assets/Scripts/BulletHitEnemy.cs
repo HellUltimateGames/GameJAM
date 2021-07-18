@@ -10,7 +10,6 @@ public class BulletHitEnemy : MonoBehaviour
     }
     private void OnCollisionEnter(Collision collision)
     {
-        if (gameObject.CompareTag("Ignore")) return;
         if (collision.gameObject.CompareTag("Player"))
         {
             collision.gameObject.GetComponent<Controller>().TakeDamage(5);

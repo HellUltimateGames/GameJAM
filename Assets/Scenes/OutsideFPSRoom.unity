@@ -144,7 +144,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1342088870764205549, guid: 6ed8e94f205d3e5458d41b31274abaeb, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 11.975828
+      value: 12.31
       objectReference: {fileID: 0}
     - target: {fileID: 1342088870764205549, guid: 6ed8e94f205d3e5458d41b31274abaeb, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1276,6 +1276,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1316846520, guid: 4e9d3b7f11e6d5b4a8bc073fc50dad4e, type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 8865496500307438082, guid: 4e9d3b7f11e6d5b4a8bc073fc50dad4e, type: 3}
       propertyPath: m_AdditionalShaderChannelsFlag
       value: 25
@@ -1461,7 +1465,7 @@ Light:
   m_Type: 1
   m_Shape: 0
   m_Color: {r: 1, g: 0.95686275, b: 0.8392157, a: 1}
-  m_Intensity: 1
+  m_Intensity: 0.8
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208

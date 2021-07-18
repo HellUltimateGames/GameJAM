@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 public class CanvasManager : MonoBehaviour
 {
     // Start is called before the first frame update
@@ -60,5 +61,6 @@ public class CanvasManager : MonoBehaviour
     {
        Slider slider =  gameObject.GetComponentInChildren<Slider>();
         slider.value = (slider.value - val);
+        if (slider.value <= 0) SceneManager.LoadScene(0);
     }
 }
