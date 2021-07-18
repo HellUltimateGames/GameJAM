@@ -5,7 +5,7 @@ using UnityEngine.AI;
 
 public class EnemyAI : MonoBehaviour
 {
-    [SerializeField] private GameObject loopdroponandoff;
+  
 
 
 
@@ -25,6 +25,8 @@ public class EnemyAI : MonoBehaviour
     public Vector3 walkPoint;
     bool walkPointSet;
     public float walkPointRange;
+
+    public Animator anim;
 
     //Attacking
     public float timeBetweenAttacks;
@@ -56,6 +58,7 @@ public class EnemyAI : MonoBehaviour
 
     private void Patrolling()
     {
+        anim.SetInteger("Mode", 0);
         if (!walkPointSet) SearchWalkPoint();
 
         if (walkPointSet)
@@ -81,18 +84,23 @@ public class EnemyAI : MonoBehaviour
 
     private void ChasePlayer()
     {
+
+        anim.SetInteger("Mode", 1);
         agent.SetDestination(player.position);
     }
     private void AttackPlayer()
     {
+
+        anim.SetInteger("Mode", 2);
         //makse sure enemy doesnt move
-        agent.SetDestination(transform.position);
+        agent.Warp(transform.position);
         transform.LookAt(player);
 
         if(!alreadyAttacked)
         {
             ///Attack Code
             Rigidbody rb = Instantiate(projectile, transform.position + (transform.forward*2), Quaternion.identity).GetComponent<Rigidbody>();
+            rb.gameObject.GetComponent<CapsuleCollider>().enabled = true;
             rb.AddForce(transform.forward * projectileSpeed, ForceMode.Impulse);
             
             
@@ -118,7 +126,6 @@ public class EnemyAI : MonoBehaviour
     public void KillEnemy()
     {
         isDead = true;
-        loopdroponandoff.SetActive(true);
         gameObject.SetActive(false);
     }
 }
