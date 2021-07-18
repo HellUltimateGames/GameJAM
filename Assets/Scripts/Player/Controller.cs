@@ -13,7 +13,7 @@ public class Controller : MonoBehaviour
     public Camera playerCamera;
     public float lookSpeed = 2.0f;
     public float lookXLimit = 45.0f;
-
+    public AudioSource footsteps;
     private CanvasManager canvas;
 
     CharacterController characterController;
@@ -66,7 +66,7 @@ public class Controller : MonoBehaviour
 
         // Move the controller
         characterController.Move(moveDirection * Time.deltaTime);
-
+        
         // Player and Camera rotation
         if (canMove)
         {
@@ -75,6 +75,7 @@ public class Controller : MonoBehaviour
             playerCamera.transform.localRotation = Quaternion.Euler(rotationX, 0, 0);
             transform.rotation *= Quaternion.Euler(0, Input.GetAxis("Mouse X") * lookSpeed, 0);
         }
+        footsteps.Play(0);
     }
     public void TakeDamage(int i)
     {
